@@ -28,7 +28,7 @@ class ApiExample():
             "completed": False
         }
         headers =  {"Content-Type":"application/json"}
-        response = requests.post(api_url, data=json.dumps(todo), headers=headers)
+        response = requests.post(api_url, data=json.dumps(todo), headers=headers) # serializing data with json.dumps(todo)
         print('RESPONSE', response.json())
         print('STATUS', response.status_code)
 
